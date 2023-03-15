@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Really Great Site, Organic Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url('https://source.unsplash.com/1600x900/?fashion');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.logo a {
+color: #fff;
+font-size: 24px;
+font-weight: 700;
+text-decoration: none;
+}
+
+.menu ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu li {
+margin-left: 20px;
+}
+
+.menu li:first-child {
+margin-left: 0;
+}
+
+.menu a {
+color: #fff;
+font-size: 18px;
+font-weight: 400;
+text-decoration: none;
+}
+
+.hero-text {
+text-align: center;
+}
+
+.hero-text h1 {
+color: #fff;
+font-size: 64px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.hero-text p {
+color: #fff;
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 40px;
+}
+
+.button {
+background-color: #fff;
+color: #222;
+display: inline-block;
+font-size: 18px;
+font-weight: 700;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.button:hover {
+background-color: #222;
+color: #fff;
+}
+
+.features {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 80px 0;
+}
+
+.feature-item {
+text-align: center;
+width: 300px;
+margin: 20px;
+}
+
+.feature-item i {
+color: #222;
+font-size: 64px;
+margin-bottom: 20px;
+}
+
+.feature-item h2 {
+color: #222;
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.feature-item p {
+font-size: 1.2rem;
+}
+
+.about {
+text-align: center;
+padding: 100px 0;
+}
+
+.about h2 {
+font-size: 3rem;
+margin-bottom: 50px;
+}
+
+.about p {
+font-size: 1.5rem;
+margin-bottom: 50px;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 50px;
+}
+
+.social-media a {
+font-size: 1.5rem;
+color: #fff;
+margin-right: 20px;
+transition: all 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+color: #f2b632;
+}
+
+footer p {
+font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+nav {
+padding: 10px 20px;
+}
+
+.logo a {
+font-size: 1.5rem;
+}
+
+.menu ul {
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: #333;
+display: none;
+padding: 20px 0;
+}
+
+.menu li {
+margin: 10px 0;
+}
+
+.menu a {
+font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+display: block;
+font-size: 2rem;
+color: #fff;
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 20px;
+z-index: 1;
+}
+
+.show-menu {
+display: flex;
+}
+
+.hero-text {
+margin-top: 100px;
+}
+
+.hero-text h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+.hero-text p {
+font-size: 1.2rem;
+margin-bottom: 50px;
+}
+
+.feature-item {
+flex-basis: 100%;
+margin: 20px 0;
+}
+}
+
+/* Responsive design for tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+nav {
+padding: 10px 20px;
+}
+
+.logo a {
+font-size: 1.5rem;
+}
+
+.menu ul {
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: #333;
+display: none;
+padding: 20px 0;
+}
+
+.menu li {
+margin: 10px 0;
+}
+
+.menu a {
+font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+display: block;
+font-size: 2rem;
+color: #fff;
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 20px;
+z-index: 1;
+}
+
+.show-menu {
+display: flex;
+}
+
+.hero-text {
+margin-top: 100px;
+}
+
+.hero-text h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+.hero-text p {
+font-size: 1.2rem;
+margin-bottom: 50px;
+}
+
+.feature-item {
+flex-basis: 100%;
+margin: 20px 0;
+}
+}
+
+/* Responsive design for desktop */
+@media screen and (min-width: 1025px) {
+nav {
+padding: 30px 50px;
+}
+
+.logo a {
+font-size: 2rem;
+}
+
+.menu ul {
+display: flex;
+}
+
+.menu li {
+margin: 0 10px;
+}
+
+.menu a {
+font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+color: #f2b632;
+}
+
+.menu-toggle {
+display: none;
+}
+
+.hero-text {
+margin-top: 200px;
+}
+
+.hero-text h1 {
+font-size: 6rem;
+margin-bottom: 20px;
+}
+
+.hero-text p {
+font-size: 2rem;
+margin-bottom: 50px;
+}
+
+.feature-item {
+flex-basis: 300px;
+margin: 20
+}
+
+.feature-item img {
+width: 100%;
+}
+
+.feature-item h3 {
+font-size: 2rem;
+margin: 20px 0;
+}
+
+.feature-item p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+
+.cta {
+background-color: #f2b632;
+color: #fff;
+display: block;
+font-size: 1.5rem;
+text-align: center;
+padding: 20px 0;
+margin-top: 50px;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.cta:hover {
+background-color: #fff;
+color: #f2b632;
+border: 2px solid #f2b632;
+}
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">Really Great Site</a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-text">
+        <h1>Organic Fashion</h1>
+        <p>Shop our collection of eco-friendly, sustainable fashion.</p>
+        <a href="#" class="button">Shop Now</a>
+      </div>
+    </header>
+    <section class="features">
+      <div class="feature-item">
+        <i class="fas fa-globe"></i>
+        <h2>Global Reach</h2>
+        <p>Our sustainable fashion is available worldwide.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-recycle"></i>
+        <h2>Eco-Friendly</h2>
+        <p>Our clothes are made from organic and recycled materials.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h2>Fair Trade</h2>
+        <p>We ensure fair wages and working conditions for our workers.</p>
+      </div>
+    </section>
+    <section class="about">
+      <h2>About Really Great Site</h2>
+      <p>Really Great Site is a sustainable fashion company that is committed to reducing the environmental impact of the fashion industry. We believe that fashion can be both stylish and sustainable, and we strive to create clothes that are eco-friendly, fair trade, and affordable. </p>
+      <a href="#" class="button">Learn More</a>
+    </section>
+    <footer>
+      <div class="logo">
+        <a href="#">Really Great Site</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2023 Really Great Site. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
